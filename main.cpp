@@ -11,28 +11,29 @@
 
 int main(int argc, const char * argv[]) {
     //Inputs
-    double motorVoltage;
-    double highPowerInW;
-    double lowPowerInW;
-    double highPowerDurationInMin;
-    double lowPowerDurationInMin;
-    double highPowerDurationInHours;
-    double lowPowerDurationInHours;
-    double cRating;
-    double cellCapacityInAmpHours;
-    double cellVoltage;
-    double safetyPercentage;
+    
+    double motorVoltage = 0;
+    double highPowerInW = 0;
+    double lowPowerInW = 0;
+    double highPowerDurationInMin = 0;
+    double lowPowerDurationInMin = 0;
+    double highPowerDurationInHours = 0;
+    double lowPowerDurationInHours = 0;
+    double cRating = 0;
+    double cellCapacityInAmpHours = 0;
+    double cellVoltage = 0;
+    double safetyPercentage = 0;
     //Calculated Values
     
-    double highPowerCurrent;
-    double lowPowerCurrent;
-    double highPowerCapacity;
-    double lowPowerCapacity;
-    double rawCapacityReq;
-    double maxSafeCurrent;
-    double totalCapacity;
-    double seriesPacks;
-    double parallelPacks;
+    double highPowerCurrent = 0;
+    double lowPowerCurrent = 0;
+    double highPowerCapacity = 0;
+    double lowPowerCapacity = 0;
+    double rawCapacityReq = 0;
+    double maxSafeCurrent = 0;
+    double totalCapacity = 0;
+    double seriesPacks = 0;
+    double parallelPacks = 0;
 
 
     std::cout << "Enter motor voltage[V]: " << std::endl;
@@ -61,7 +62,11 @@ int main(int argc, const char * argv[]) {
     std::cin >> safetyPercentage;
     
     highPowerDurationInHours = highPowerDurationInMin/60;
+    std::cout << "High power duration in hours: " << highPowerDurationInHours << std::endl;
+    
     lowPowerDurationInHours = lowPowerDurationInMin/60;
+    
+    std::cout << "Low power duratio in hours: " << lowPowerDurationInHours << std::endl;
     
     highPowerCurrent = 8*(highPowerInW/motorVoltage);
     lowPowerCurrent = 8*(lowPowerInW/motorVoltage);
