@@ -40,6 +40,7 @@ int main(int argc, const char * argv[]) {
         double totalCapacity = 0;
         double seriesPacks = 0;
         double parallelPacks = 0;
+        
 
         std::string useCRatinng;
         
@@ -55,6 +56,9 @@ int main(int argc, const char * argv[]) {
         std::cin >> lowPowerInW;
         std::cout << "Enter low power duration [minutes]: " << std::endl;
         std::cin >> lowPowerDurationInMin;
+        
+        std::cout << "Enter Y for c rating, N for max continous discharge: " << std::endl;
+        
     
         std::cout << "Enter C Rating | C ratings above 40 C will be set to 40 C" << std::endl;
         std::cin >> cRating;
