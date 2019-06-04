@@ -57,7 +57,7 @@ int main(int argc, const char * argv[]) {
         std::cout << "Enter low power duration [minutes]: " << std::endl;
         std::cin >> lowPowerDurationInMin;
         
-        std::cout << "Enter Y for c rating, N for max continous discharge: " << std::endl;
+       // std::cout << "Enter Y for c rating, N for max continous discharge: " << std::endl;
         
     
         std::cout << "Enter C Rating | C ratings above 40 C will be set to 40 C" << std::endl;
